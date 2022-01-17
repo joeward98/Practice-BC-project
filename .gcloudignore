@@ -30,7 +30,6 @@ scripts/
 !/dist/**
 !/src/
 !/src/**
-!/function.js
 !/package.json
 !/package-lock.json
 !/functions_env/
