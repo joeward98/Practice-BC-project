@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "@google-cloud/functions-framework": "^2.1.0",
+    "csv-parse": "^5.0.4",
     "express": "^4.17.2"
   }
 }
