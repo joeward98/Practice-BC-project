@@ -5,6 +5,9 @@
     "type": "git",
     "url": "git+https://github.com/joeward98/Practice-BC-project.git"
   },
+  "scripts": {
+    "build": "rimraf .build && tsc && cloud-seed build . --project=joes-practice-bc-project"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -21,6 +24,7 @@
     ]
   },
   "devDependencies": {
+    "@space48/cloud-seed": "^0.4.10",
     "@types/express": "^4.17.13",
     "@types/typescript": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
