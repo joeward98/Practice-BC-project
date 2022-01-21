@@ -15,7 +15,7 @@ interface RawProduct {
 const processProducts = async (products: RawProduct[]) =>
   Promise.all(
     products.map(product =>
-      BigCommerceClient.createProduct({
+      BigCommerceClient.upsertProduct({
         sku: product["SKU"],
         availability: product["Available"] == "Yes" ? "available" : "disabled",
         name: product["Product Name"],

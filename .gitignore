@@ -110,3 +110,5 @@ test/
 
 # Space 48 development scripts -- currently some contain sensitive properties
 /scripts
+
+*.csv

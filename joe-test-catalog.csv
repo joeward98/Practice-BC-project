@@ -1,11 +1,3 @@
 SKU,Available,Product Name,Price,Weight,Inventory Level,Country Restriction,FE Sash Message
-JOE-TEST-1,Yes,Wood Chair,1,1.0,10,IE,The OG chair
-JOE-TEST-2,No,2 wood 2 chair,2,2.0,20,IE,Another chair
-JOE-TEST-3,Yes,Wood chair - Tokyo drift,3,3.0,30,IE,Another chair
-JOE-TEST-4,,Wood and chair,4,4.0,40,IE,Another chair
-JOE-TEST-5,Yes,Wood 5,5,5.0,50,IE,Another chair
-JOE-TEST-6,Yes,Chair 6,6,6.0,60,None,Another chair
-JOE-TEST-7,Yes,W7,7,6.1,70,None,Another chair
-JOE-TEST-8,Yes,The wood of the chair,8,6.2,80,None,Another chair
-JOE-TEST-9,No,C9,9,6.3,0,None,Another chair
-JOE-TEST-10,No,Wood10 your SeatChairs ,10,6.4,0,GB,Coming soon to a storefront near you
+JOE-TEST-1,Yes,Plastic Chair,1,1.0,10,IE,The BEST chair
+JOE-TEST-2,No,2 wood chair,2,2.0,20,IE,Yet Another chair
