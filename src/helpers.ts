@@ -1,5 +1,6 @@
 import { parse } from "csv-parse";
 import { BigCommerceClient } from "./clients/bigcommerce";
+import { PubSub } from "@google-cloud/pubsub";
 
 interface RawProduct {
   SKU: string;
@@ -35,5 +36,15 @@ export const parseAndProcessProductData = (productsDataCSV: Buffer) => {
   parse(productsDataCSV, { columns: true }, async (error: any, products: RawProduct[]) => {
     if (error) console.log(error);
     else await processProducts(products);
+  });
+};
+
+const pubSub = new PubSub();
+
+export const publish = async (topic: string, message: string) => {
+  const dataBuffer = Buffer.from(JSON.stringify(message));
+  //await pubSub.topic(topic).publish(dataBuffer);
+  await pubSub.topic(topic).publish(dataBuffer, () => {
+    console.log("published message");
   });
 };
